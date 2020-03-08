@@ -1,0 +1,38 @@
+@mixin flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+@mixin grid {
+	display: -moz-grid;
+	display: -ms-grid;
+	display: -o-grid;
+	display: grid;
+}
+
+@mixin cont($m-width){
+    width: 100%;
+    max-width: $m-width;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@mixin i-resp{
+    display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+@mixin mask($color) {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 0;
+	background-color: $color;
+}
